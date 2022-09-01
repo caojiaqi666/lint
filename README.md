@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+Hooks-Admin
+介绍
+🚀🚀🚀 Hooks Admin，基于 React18、React-Router v6、React-Hooks、Redux、TypeScript、Webpack、Ant-Design 开源的一套后台管理框架。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+安装使用步骤
+Clone：
 
-## Available Scripts
+# GitHub
 
-In the project directory, you can run:
+git clone https://github.com/caojiaqi666/lint.git
 
-### `npm start`
+### 安装：
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+pnpn install
 
-### `npm test`
+## npm install 安装失败，请升级 nodejs 到 16 以上，或尝试使用以下命令：
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install --registry=https://registry.npm.taobao.org
 
-### `npm run build`
+Run：
+npm run dev
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run serve
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build：
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 开发环境
 
-### `npm run eject`
+npm run build:dev
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 测试环境
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run build:test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 生产环境
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm run build:pro
+Lint：
 
-## Learn More
+### eslint 检测代码
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run lint:eslint
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### prettier 格式化代码
+
+npm run lint:prettier
+
+### stylelint 格式化 css 样式
+
+npm run lint:stylelint
+
+commit：
+
+### 提交代码（会自动执行 lint:lint-staged 命令）
+
+npm run commit
+
+### 参与贡献
+
+Fork 本仓库
+
+新建 feature_xxx 分支
+
+提交代码
+
+新建 Pull Request
