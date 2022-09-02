@@ -1,0 +1,37 @@
+// 添加以下配置到settings
+{
+  // tab几个缩进
+  "editor.tabSize": 2,
+  // 显示垂直标尺
+  "editor.rulers": [120],
+  // 编辑器文件保存时的操作(MacOS：快捷键是 command + s ),并不能修复所有问题，多数还是需要手动修复
+  "editor.codeActionsOnSave": {
+    // 这个自动的按需开启
+    // 文件保存时开启eslint自动修复程序
+    "source.fixAll.eslint": true,
+    // 文件保存时开启stylelint自动修复程序
+    "source.fixAll.stylelint": true,
+  },
+
+  // eslint   -----settings begin-----
+  // An array of language ids which should be validated by ESLint
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+  // eslint   -----settings end-----
+
+  //stylelint   -----settings begin-----
+  // 防止编辑器内置linter与插件冲突设置
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // 启用stylelint插件
+  "stylelint.enable": true
+  //stylelint   -----settings end-----
+}
