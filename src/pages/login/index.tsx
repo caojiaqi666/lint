@@ -1,6 +1,6 @@
 import { Button, message } from "antd";
 import { useRequest } from "ahooks";
-// import styles from "./index.less";
+import styles from "./index.less";
 import * as API from "../../api/index";
 
 const Login = () => {
@@ -16,7 +16,7 @@ const Login = () => {
 	return (
 		<>
 			{loading ? (
-				<div>loading...</div>
+				<div className={styles.loading}>loading...</div>
 			) : (
 				<Button
 					type="primary"
