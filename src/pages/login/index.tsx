@@ -1,7 +1,7 @@
 import { Button, message } from "antd";
 import { useRequest } from "ahooks";
-import styles from "./index.less";
 import * as API from "../../api/index";
+import Loading from "../../components/Loading";
 
 const Login = () => {
 	const { data, error, loading } = useRequest(() => {
@@ -9,14 +9,10 @@ const Login = () => {
 	});
 	console.log("data, error, loading: ", data, error, loading);
 
-	// useEffect(() => {
-	// 	throw Error("1233");
-	// });
-
 	return (
 		<>
 			{loading ? (
-				<div className={styles.loading}>loading...</div>
+				<Loading />
 			) : (
 				<Button
 					type="primary"
