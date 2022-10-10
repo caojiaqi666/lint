@@ -1,8 +1,7 @@
 import { Button, message } from "antd";
 import { useRequest } from "ahooks";
-import "./index.less";
+// import styles from "./index.less";
 import * as API from "../../api/index";
-import { useEffect } from "react";
 
 const Login = () => {
 	const { data, error, loading } = useRequest(() => {
@@ -10,9 +9,9 @@ const Login = () => {
 	});
 	console.log("data, error, loading: ", data, error, loading);
 
-	useEffect(() => {
-		throw Error("1233");
-	});
+	// useEffect(() => {
+	// 	throw Error("1233");
+	// });
 
 	return (
 		<>
