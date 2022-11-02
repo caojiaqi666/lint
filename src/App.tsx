@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import styles from "./App.less";
 import Router from "./routers/index";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/reset.less";
@@ -10,6 +10,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<Errorboundary>
+				<div className={styles.wrap}></div>
 				<Router />
 			</Errorboundary>
 		</BrowserRouter>
